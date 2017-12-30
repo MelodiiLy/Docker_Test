@@ -22,10 +22,10 @@ https://docs.docker.com/docker-for-windows/install/
 
 ## Check Docker and Login
 
-Enter your Username and Password in the terminal.
+Enter your Username (ID) and Password in the terminal.
 
 ```sh
-Docker login
+docker login
 ```
 
 You should see **'Login Succeeded'** if there is no mistake.
@@ -41,21 +41,21 @@ docker images
 
 #### Create Docker Image
 
-Switch to the root of your project directory
+Switch to the root of your project directory. In this tutorial, simply swicth to the local repository
 ```sh
 cd <path of the directory>
 ```
 
 In this tutorial, clone the repository and simply switch to
 ```sh
-cd /Downloads/Docker_TEST
+cd /Downloads/Docker_Test
 ```
 
 #### What is Dockerfile
 
 A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build users can create an automated build that executes several command-line instructions in succession.
 
-#### Add Dockerfile in the directory
+#### Add Dockerfile in the directory (Already)
 ```sh
 touch Dockerfile
 ```
@@ -92,7 +92,7 @@ If you use python, add **requirements.txt** to satisfy the required environment.
 
 In this tutorial, Dockerfile and requirements.txt are already been created. So, build the source files to the Image directly.
 ```sh
-docker build -t Docker_Test .
+docker build -t docker_test .
 ```
 
 #### Check the new Image
@@ -102,7 +102,7 @@ docker images
 
 #### Tag the target Image for pushing
 ```sh
-docker tag Docker_Test <Docker Account Username>/Docker_Test
+docker tag docker_test <Docker Account Username>/docker_test
 ```
 
 #### Push Image
