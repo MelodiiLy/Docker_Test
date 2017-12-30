@@ -55,7 +55,7 @@ cd /Downloads/Docker_Test
 
 A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build users can create an automated build that executes several command-line instructions in succession.
 
-#### Add Dockerfile in the directory (Already)
+#### Add Dockerfile in the directory (Already exits in this repository)
 ```sh
 touch Dockerfile
 ```
@@ -86,7 +86,7 @@ ENV NAME World
 CMD ["python", "app.py"]
 ```
 
-If you use python, add **requirements.txt** to satisfy the required environment.
+If you use python, fill **requirements.txt** to satisfy the required environment. **(Already exits in this repository)**
 
 #### Build source files
 
@@ -139,5 +139,10 @@ Execute python file
 python hello.py
 ```
 You should see **'Love and Peace' whith any error**.
+
+Exit from the application when you done
+```sh
+exit
+```
 
 ## Congratulation!
